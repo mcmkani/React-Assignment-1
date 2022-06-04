@@ -25,9 +25,7 @@ function Card(prop){
               <li className={`${prop.type === "PRO" ? "text" : "text-muted"}`}><span className="fa-li"><i className="fas fa-times"></i></span>Monthly Status
                 Reports</li>
             </ul>
-            <div className="d-grid">
-              <a className="btn btn-primary text-uppercase">Button</a>
-            </div>
+              <div className="btn btn-primary text-uppercase">Button</div>
           </div>
         </div>
       </div>
