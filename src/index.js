@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Card from './Card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
+  <React.StrictMode>  
+    <section className="pricing py-5">
+      <div className="container">
+        <div className="row">
+          <Card type="FREE" charge="0" user="Single" storage="5" />
+          <Card type="PLUS" charge="9" user="5" storage="50" />
+          <Card type="PRO" charge="49" user="Unlimited" storage="150" />
+        </div>
+      </div>
+    </section>
   </React.StrictMode>
 );
 
