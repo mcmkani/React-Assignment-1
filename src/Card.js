@@ -1,9 +1,5 @@
 import React from 'react';
-import './bootstrap.css';
-import './bootstrap.css.map';
-//import './all.min.css';
 import './Card.css';
-//import './webfonts'
 
 function Card(prop){
     return <div className="col-lg-4">
@@ -25,7 +21,9 @@ function Card(prop){
               <li className={`${prop.type === "PRO" ? "text" : "text-muted"}`}><span className="fa-li"><i className="fas fa-times"></i></span>Monthly Status
                 Reports</li>
             </ul>
+            <div className="d-grid">
               <div className="btn btn-primary text-uppercase">Button</div>
+            </div>
           </div>
         </div>
       </div>
